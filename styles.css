@@ -1,0 +1,299 @@
+@font-face {
+  font-family: Formula1;
+  src: url(fonts/Formula1-Regular-1.ttf);
+}
+
+@font-face {
+  font-family: Formula1-bold;
+  src: url(fonts/Formula1-Bold_web.ttf);
+}
+
+body,
+html {
+  height: 100%;
+  /* font-family: sans-serif; */
+  overflow: hidden;
+  font-family: "Formula1-bold";
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-text {
+  font-size: 17px; 
+  font-weight: bold;
+  position: relative;
+  left: 7%;
+}
+
+.results {
+  position: relative;
+  left: 7%;
+}
+
+.light {
+  border-radius: 100%;
+  background: #222;
+  margin: 10px;
+}
+
+.light::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+/* .light-strip.on .light:nth-child(1n + 3) {
+  background: red;
+} */
+
+.f1-lights {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 30%;
+  left: 7%;
+}
+
+.light-strip {
+  background: black;
+  border-radius: 11px;
+  margin: 0 2px;
+  position: relative;
+  flex: 1;
+}
+
+@media (min-width: 435px) {
+  .light-strip {
+    margin: 0 5px;
+    border-radius: 14px;
+  }
+}
+
+.back-board {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 50%;
+  height: 5%;
+  background: #000;
+  transform: translateY(-50%);
+}
+
+.time {
+  font-size: 88px;
+  line-height: 1;
+  margin: 1rem;
+  text-transform: uppercase;
+  will-change: transform;
+  text-align: center;
+}
+
+.time.anim {
+  animation: bang 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.best,
+.credit {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@keyframes bang {
+  from {
+    transform: scale(2);
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.leaderboard {
+  background-color: #011e4b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 25%;
+  z-index: 200;
+  border-top-right-radius: 100px;
+  opacity: 0.92;
+  display: flex;
+  flex-direction: column;
+}
+.bord {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  text-align:center;
+  vertical-align: middle;
+}
+
+.leaderboard-text {
+  color: white;
+  text-decoration: underline;
+  margin: 25px;
+  font-size: 24px;
+}
+
+.leaderboard p {
+  display: inline-block;
+  color: white;
+  margin-right: 0;
+}
+
+.leaderboard-rank-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 10%;
+}
+
+
+.r1 p, .r2 p {
+  height:5vh;
+  margin:5px 0;
+}
+.r3 p, .r4 p {
+  height:4.3vh;
+  margin:0;
+}
+.r5 p, .r6 p{
+  height:4.1vh;
+  margin:0;
+}
+.r7 p, .r8 p {
+  height:3.9vh;
+  margin:0;
+}
+.r9 p, .r10 p {
+  height:3.7vh;
+  margin:0;
+}
+.r11 p, .r12 p {
+  height:3.5vh;
+  margin:0;
+}
+.r13 p, .r14 p, .r15 p {
+  height:3.3vh;
+  margin:0;
+}
+
+.game-area {
+  position: fixed;
+  height: 70%;
+  bottom: 0;
+  right: 0%;   /*changed here to 0*/
+  left: 0%;   /*changed here to 0*/
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-right: 150px;
+  border-top-right-radius: 150px;
+  box-shadow: 30px 30px 60px rgba(16, 0, 0, 0.32); /*added shadow to game-area*/
+}
+
+.dots-grp {
+  z-index: 90;
+  margin: 5% 17% 37% 68%;
+}
+
+.table-cell {
+  padding: 0.5vh 2vh;
+}
+
+.red-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 29.5%;
+  background-color: #ff1b48;
+  z-index: 50;
+}
+
+
+.background-pattern-grid {
+  width: 6%;
+  background-color: #ffe5e5;
+  height: 40%;
+
+}
+
+.background-pattern-grid-main {
+  width: 6%;
+  background-color: #ffe5e5;
+
+}
+
+.name-input-box {
+  background-color: #ff1b48;
+  z-index: 500;
+  position: fixed;
+  bottom: 10%;
+  right: -1%;
+  height: 45%;
+  width: 15%;
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-input-logo {
+  margin-top: 9%;
+  width: 30%;
+}
+
+.name-input-text {
+  margin-top:15%;
+  color:white;
+  font-size: 12px;
+}
+
+.name-input {
+  border: none;
+  border-radius:5px;
+  width:80%;
+  margin: 10px;
+  height:30px;
+
+}
+.refresh {
+  width: 78px;
+  height: 77px;
+  margin-top:10%;
+  flex-shrink: 0;
+  border-radius: 23px;
+  background-color:#011E4B;
+}
+.anchorr {
+  position:relative;
+  left:30%;
+  top:40%;
+}
+
+.name-clear-image {
+  width: 50px;
+}
+
+
+.ieee-logo {
+  z-index: 200;
+}
+
+.ieee-logo-img {
+  height: 20%;
+  flex-shrink: 0;
+  position: absolute;
+  left: calc(50% - 148px/2);
+  top: 50px;
+}

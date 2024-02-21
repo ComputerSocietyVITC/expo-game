@@ -1,121 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>IEEE Computer Society</title>
-    <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#ffffff" />
-    <script defer="" src="client.js"></script>
-    <style>
-      body,
-      html {
-        height: 100%;
-        font-family: sans-serif;
-        overflow: hidden;
-      }
 
-      body {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>IEEE Computer Society</title>
+  <meta name="theme-color" content="#ffffff" />
+  <script defer="" src="client.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/81fdbff07c.js" crossorigin="anonymous"></script>
+</head>
 
-      .largeText{
-        fontSize:20px
-       }
+<body>
 
-      .light {
-        border-radius: 100%;
-        background: #222;
-        margin: 10px;
-      }
 
-      .light::before {
-        content: "";
-        display: block;
-        padding-top: 100%;
-      }
+  <div class="leaderboard">
+    <div>
+      <p class="leaderboard-text">LEADERBOARD</p>
+    </div>
+    <table style="border-collapse:collapse; width: 80%; margin-left:20px;">
+      <tr class="r1">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r2">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
 
-      .light-strip.on .light:nth-child(1n + 3) {
-        background: red;
-      }
+      <tr class="r3">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r4">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r5">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r6">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r7">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r8">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r9">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r10">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r11">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r12">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r13">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r14">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
+      <tr class="r15">
+        <td class="bord">
+          <p class="leaderboard-rank-num"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-rank-name"></p>
+        </td>
+        <td class="bord">
+          <p class="leaderboard-time"></p>
+        </td>
+      </tr>
 
-      .f1-lights {
-        display: flex;
-        position: relative;
-        width: 100%;
-        max-width: 520px;
-      }
+    </table>
+  </div>
 
-      .light-strip {
-        background: black;
-        border-radius: 11px;
-        margin: 0 2px;
-        position: relative;
-        flex: 1;
-      }
-
-      @media (min-width: 435px) {
-        .light-strip {
-          margin: 0 5px;
-          border-radius: 14px;
-        }
-      }
-
-      .back-board {
-        position: absolute;
-        left: 5px;
-        right: 5px;
-        top: 50%;
-        height: 5%;
-        background: #000;
-        transform: translateY(-50%);
-      }
-
-      p {
-        font-size: 18px;
-        text-align: center;
-        line-height: 1.4;
-        margin: 1em;
-        margin-bottom: 0;
-      }
-
-      .time {
-        font-size: 90px;
-        font-size: 12vw;
-        line-height: 1;
-        margin: 1rem;
-        text-transform: uppercase;
-        will-change: transform;
-        text-align: center;
-      }
-
-      .time.anim {
-        animation: bang 0.1s cubic-bezier(0.23, 1, 0.32, 1);
-      }
-
-      .best,
-      .credit {
-        font-size: 18px;
-        text-align: center;
-        line-height: 1.4;
-      }
-
-      @keyframes bang {
-        from {
-          transform: scale(2);
-        }
-      }
-
-      a:link {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-
-  <body>
+  <main class="game-area">
+    <div class="background-pattern">
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main"></div>
+      <div class="background-pattern-grid-main "></div>
+      <div class="background-pattern-grid-main "></div>
+      <div class="background-pattern-grid-main "></div>
+      <div class="background-pattern-grid-main "></div>
+    </div>
     <div class="f1-lights">
       <div class="back-board"></div>
       <div class="light-strip">
@@ -150,13 +239,105 @@
       </div>
     </div>
 
-    <p class="largeText">
-      Tap/click when you're ready to race, then tap again when the lights go
-      out.
+    <p class="large-text">
+      TAP/CLICK Anywhere to start and click again when lights go out.
     </p>
 
     <div class="results">
       <div class="time">00.000</div>
     </div>
-  </body>
+  </main>
+
+
+  <table class="dots-grp">
+    <tr>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+    </tr>
+    <tr>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+    </tr>
+    <tr>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+    </tr>
+    <tr>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+    </tr>
+    <tr>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+    </tr>
+    <tr>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell red"><img src="images/Ellipse 16.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+      <td class="table-cell"><img src="images/Ellipse 11.png"></td>
+    </tr>
+  </table>
+
+  <div class="red-sidebar"></div>
+
+  <div class="background-pattern">
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+    <div class="background-pattern-grid"></div>
+  </div>
+
+  <div class="ieee-logo">
+    <img class="ieee-logo-img" src="images/ieeecs-logo-red.png">
+  </div>
+
+
+  <div class="name-input-box">
+    <img class="name-input-logo" src="images/ieeecs-logo.png">
+    <p class="name-input-text">Enter your name</p>
+    <input type="text" class="name-input">
+    <div class="refresh"><a href="" class="anchorr"><i class="fa-solid fa-rotate-right fa-2xl"
+          style="color: #ffffff;"></i>
+        <div>
+      </a>
+    </div>
+</body>
+
 </html>
