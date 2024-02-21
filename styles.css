@@ -25,12 +25,10 @@ body {
 }
 
 .large-text {
-  font-size: 17px;  /*earlier 16*/
+  font-size: 17px; 
   font-weight: bold;
   position: relative;
-  /*added*/
   left: 7%;
-  /*added*/
 }
 
 .results {
@@ -50,22 +48,17 @@ body {
   padding-top: 100%;
 }
 
-.light-strip.on .light:nth-child(1n + 3) {
+/* .light-strip.on .light:nth-child(1n + 3) {
   background: red;
-}
+} */
 
 .f1-lights {
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: relative;
-  /* width: 60%; */
   width: 30%;
-  /*changed width*/
   left: 7%;
-  /* added here*/
-  /* max-width: 50%; */
-
 }
 
 .light-strip {
@@ -93,17 +86,8 @@ body {
   transform: translateY(-50%);
 }
 
-/* p {
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.4;
-  margin: 1em;
-  margin-bottom: 0;
-} */
-
 .time {
   font-size: 88px;
-  /* font-size: 8vw; */
   line-height: 1;
   margin: 1rem;
   text-transform: uppercase;
@@ -201,18 +185,6 @@ a:link {
   margin:0;
 }
 
-/*.leaderboard-size-1 p{
-  font-size: 20px;
-}
-
-.leaderboard-size-2 p{
-  font-size: 16px;
-}
-
-.leaderboard-rank-num {
-  margin-left: 12.5px;
-}*/
-
 .game-area {
   position: fixed;
   height: 70%;
@@ -246,21 +218,6 @@ a:link {
   width: 29.5%;
   background-color: #ff1b48;
   z-index: 50;
-}
-
-.background-pattern {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background-color: white;
-  justify-content: space-between;
-  border-top-right-radius: 150px;
-  clip-path: border-box;
 }
 
 
